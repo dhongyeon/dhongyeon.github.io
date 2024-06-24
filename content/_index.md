@@ -21,15 +21,15 @@ sections:
     design:
       css_class: dark
       background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: false
+        # color: black
+        # image:
+        #   # Add your image background to `assets/media/`.
+        #   filename: stacked-peaks.svg
+        #   filters:
+        #     brightness: 1.0
+        #   size: cover
+        #   position: center
+        #   parallax: false
   - block: markdown
     content:
       title: '📚 My Research'
@@ -41,6 +41,8 @@ sections:
         
         Please reach out to collaborate 😃
     design:
+      spacing:
+        padding: ['4rem', '0.75rem', 0, '0.75rem'] # top, right, bottom, left
       columns: '1'
   - block: collection
     id: papers
