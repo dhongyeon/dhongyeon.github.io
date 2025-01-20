@@ -175,5 +175,5 @@ education:
 <h2 class="mt-0 pt-0 lg:mt-0 lg:pt-0 text-3xl">Hello! (Under construction 🚧)  </h2>
 
 <div class="prose prose-slate lg:prose-xl dark:prose-invert mb-6">
-    <p> I am a Ph.D. student at the Dept. of Physics. </p>
+    <p> I am a Ph.D. student at Yonsei University. My research interests cover a wide range of topics in theoretical high energy physics and cosmology. </p>
 </div>
