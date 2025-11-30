@@ -20,18 +20,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Graduate Student
+role: Postdoctoral Scholar
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Yonsei HEP-COSMO
-    url: https://hepcosmo.yonsei.ac.kr/
+  - name: University of Chicago, Enrico Fermi Institute & Kavli Institute for Cosmological Physics
+    url: https://efi.uchicago.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:dhongyeon@yonsei.ac.kr'
+    url: 'mailto:dycheong@uchicago.edu'
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/GetResearchDev
@@ -51,10 +51,21 @@ interests:
   - Cosmology and Astroparticle Physics
   
 
-education:
+Positions:
+  - area: Postdoctoral Scholar
+    institution: University of Chicago, Enrico Fermi Institute & Kavli Institute for Cosmological Physics
+    date_start: 2025-10-06
+    #date_end: 2025-08-31
+    date_end: current
+    # summary: |
+    #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
   - area: Integrated M.S./Ph.D. in Physics
     institution: Yonsei University
     date_start: 2019-03-01
+    date_end: 2025-08-31
     # date_end: current
     # summary: |
     #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
@@ -175,5 +186,5 @@ education:
 <h2 class="mt-0 pt-0 lg:mt-0 lg:pt-0 text-3xl">Hello!  </h2>
 
 <div class="prose prose-slate lg:prose-xl dark:prose-invert mb-6">
-    <p> I am a Ph.D. student at Yonsei University. My research interests cover a wide range of topics in theoretical high energy physics and cosmology. </p>
+    <p> I am a Joint Fermi/KICP Fellow at the University of Chicago. My research interests cover a wide range of topics in theoretical high energy physics and cosmology. </p>
 </div>

@@ -28,4 +28,4 @@ cascade:
 ---
 <!-- (*: Equal contribution) -->
 
-My research interests cover various aspects of particle phenomenology and cosmology. I am particularly interested in the physics of inflation, dark matter phenomenology, and signatures in gravitational waves.  
+My research interests cover various aspects of particle phenomenology and cosmology. I am particularly interested in dark matter phenomenology, early universe cosmology, and signatures in gravitational waves.  
