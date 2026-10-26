@@ -35,7 +35,7 @@ Then visit `http://localhost:8000`. Press Control-C in that terminal when finish
 - `assets/style.css`: shared design and responsive layouts. Colors and font choices are defined at the top.
 - `assets/site.js`: mobile menu and publication search behavior. All academic content remains readable when JavaScript is disabled.
 - `assets/portrait.jpg`: a web-optimized JPEG copy of the updated EFI portrait supplied by the user. Replace it with a square portrait to change the photograph.
-- `assets/cv-dhong-yeon-cheong.pdf`: unchanged copy of the latest supplied `CV-2.pdf`. Replace this file with a newer CV using the same filename to preserve existing links.
+- `assets/cv-dhong-yeon-cheong.pdf`: four-page public version of the latest supplied `CV-2.pdf`, with the final references page removed. Replace this file with a newer CV using the same filename to preserve existing links.
 - `assets/favicon.svg`: small browser-tab icon.
 - `.nojekyll`: tells GitHub Pages to serve the files directly.
 
@@ -43,14 +43,14 @@ Edit the HTML files with a text editor or GitHub's pencil icon, and commit the c
 
 ## Content provenance
 
-The source is the user-supplied `main-2.tex` and matching five-page `CV-2.pdf`, provided October 25, 2026. Biographical dates, institutional roles, awards, email, talks, service, and publication metadata are drawn from these files. Research descriptions summarize the stated interests and publications. The downloadable CV is a byte-for-byte copy of `CV-2.pdf`; the supplied source files and older CV files are unchanged.
+The source is the user-supplied `main-2.tex` and matching five-page `CV-2.pdf`, provided October 25, 2026. Biographical dates, institutional roles, awards, email, talks, service, and publication metadata are drawn from these files. Research descriptions summarize the stated interests and publications. The downloadable CV contains the first four pages of `CV-2.pdf`; its references-only final page was removed on October 26, 2026. The four retained pages render identically to the original. The supplied source files and older CV files are unchanged.
 
 - The website includes all 19 publication titles. The source assigns arXiv:2607.27313 to both **Continuous Measurement of Quantum Axion Dark Matter** and **Suppressed Quantum Effects of Weakly Coupled Waves**. The website corrects the former to **2610.30250**, verified directly at https://arxiv.org/abs/2610.30250 on October 25, 2026. The supplied PDF retains its original identifier.
 - The three newest papers and their identifiers were checked against the arXiv records at https://arxiv.org/abs/2610.30250, https://arxiv.org/abs/2607.27313, and https://arxiv.org/abs/2603.22394. Journal references for the 2025 preprints are updated from the supplied CV.
 - Papers are grouped by **preprint year**, not journal publication year. Missing journal entries do not imply that a paper is unpublished today.
 - The affiliation now includes EFI, KICP, and the Leinweber Institute for Theoretical Physics, with profile links supplied in the CV. Academic positions and education are listed separately.
 - The homepage includes the updated KICP seminar organizer role (October 2026–June 2027), the corrected Thunch/Funch term (October 2025–June 2026), and the three referee journals. No referee start date is inferred because the updated CV does not give one.
-- Talks and presentations are omitted from the webpage at the user's request; the downloadable CV retains the full record.
+- Talks and presentations are omitted from the webpage at the user's request; the downloadable CV retains the talks and presentations record.
 - The portrait is the updated EFI photograph supplied by the user on October 25, 2026, converted from Display P3 to standard sRGB JPEG and resized for the web, with the photo content unchanged. The homepage image URL includes a version query so browsers refresh the previous photograph.
 - No custom domain, ORCID, Google Scholar profile, or analytics service has been guessed or configured.
 
