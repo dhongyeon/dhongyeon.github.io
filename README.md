@@ -1,52 +1,61 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Dhong Yeon Cheong — academic website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+A complete static website for GitHub Pages. No installation, build, account integration, or API keys are needed. The site works at both `https://USERNAME.github.io/` and `https://USERNAME.github.io/REPOSITORY/` because its file links use relative paths.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## Publish with GitHub's website
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+1. Sign in to GitHub and create a **public repository** named `USERNAME.github.io`, using your actual GitHub username. Add a README to initialize the repository.
+2. Extract `academic-website-github-pages.zip` on your computer.
+3. Open the repository and choose **Add file → Upload files**.
+4. Upload the **contents** of the extracted folder: `index.html`, `publications.html`, the entire `assets` folder, and this README. Keep the folder structure. `index.html` must be at the repository root, not inside an `academic-website` subfolder. Include `.nojekyll` if your file picker shows it; this site also works without it.
+5. Click **Commit changes**. GitHub may ask you to confirm replacing its initial README.
+6. Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and **/ (root)**, then **Save**.
+7. Open `https://USERNAME.github.io/`. Deployment may take up to 10 minutes. If publication fails, inspect the repository's **Actions** tab.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+GitHub's instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+For an existing personal-site repository, upload these files to that repository instead. A differently named repository normally publishes at `https://USERNAME.github.io/REPOSITORY/` with the same Pages settings.
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+## Preview locally
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+Double-click `index.html` to open it in your browser. Both pages, publication search, portrait, and CV work without a server.
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+Alternatively, open a terminal in this folder and run:
 
-## We ask you, humbly, to support this open source movement
+```sh
+python3 -m http.server 8000
+```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+Then visit `http://localhost:8000`. Press Control-C in that terminal when finished.
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## Files and editing
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+- `index.html`: introduction, research summaries, selected papers, academic background, honors, service, and contact information.
+- `publications.html`: 19 publications from the supplied CV, with author lists, arXiv links, and journal links where listed in the CV. Search works in the browser.
+- `assets/style.css`: shared design and responsive layouts. Colors and font choices are defined at the top.
+- `assets/site.js`: mobile menu and publication search behavior. All academic content remains readable when JavaScript is disabled.
+- `assets/portrait.jpg`: a web-optimized JPEG copy of the updated EFI portrait supplied by the user. Replace it with a square portrait to change the photograph.
+- `assets/cv-dhong-yeon-cheong.pdf`: unchanged copy of `cv_cheong.pdf`. Replace this file with a newer CV using the same filename to preserve existing links.
+- `assets/favicon.svg`: small browser-tab icon.
+- `.nojekyll`: tells GitHub Pages to serve the files directly.
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+Edit the HTML files with a text editor or GitHub's pencil icon, and commit the changes to update the website. No rebuilding is necessary. To add a publication, copy a complete `<li class="paper">` entry in `publications.html`, give its `id` and heading `id` unique arXiv numbers, update `aria-labelledby`, and edit the title, authors, links. Add a year section if necessary. Update the initial count in `results-count`; JavaScript also calculates this count automatically. Update the homepage separately when changing selected papers.
 
-## Demo image credits
+## Content provenance
 
-- [Unsplash](https://unsplash.com)
+The source is the user-supplied `main-2.tex` and matching five-page `CV-2.pdf`, provided October 25, 2026. Biographical dates, institutional roles, awards, email, talks, service, and publication metadata are drawn from these files. Research descriptions summarize the stated interests and publications. The downloadable CV is a byte-for-byte copy of `CV-2.pdf`; the supplied source files and older CV files are unchanged.
 
-## Latest news
+- The website includes all 19 publication titles. The source assigns arXiv:2607.27313 to both **Continuous Measurement of Quantum Axion Dark Matter** and **Suppressed Quantum Effects of Weakly Coupled Waves**. The website corrects the former to **2610.30250**, verified directly at https://arxiv.org/abs/2610.30250 on October 25, 2026. The supplied PDF retains its original identifier.
+- The three newest papers and their identifiers were checked against the arXiv records at https://arxiv.org/abs/2610.30250, https://arxiv.org/abs/2607.27313, and https://arxiv.org/abs/2603.22394. Journal references for the 2025 preprints are updated from the supplied CV.
+- Papers are grouped by **preprint year**, not journal publication year. Missing journal entries do not imply that a paper is unpublished today.
+- The affiliation now includes EFI, KICP, and the Leinweber Institute for Theoretical Physics, with profile links supplied in the CV. Academic positions and education are listed separately.
+- The homepage includes the updated KICP seminar organizer role (October 2026–June 2027), the corrected Thunch/Funch term (October 2025–June 2026), and the three referee journals. No referee start date is inferred because the updated CV does not give one.
+- Talks and presentations are omitted from the webpage at the user's request; the downloadable CV retains the full record.
+- The portrait is the updated EFI photograph supplied by the user on October 25, 2026, converted from Display P3 to standard sRGB JPEG and resized for the web, with the photo content unchanged. The homepage image URL includes a version query so browsers refresh the previous photograph.
+- No GitHub username, custom domain, ORCID, Google Scholar profile, or analytics service has been guessed or configured.
 
-<!--START_SECTION:news-->
+The configured production address is https://dhongyeon.github.io/. This repository uses `.github/workflows/publish.yaml` to deploy the static site on pushes to `main`. The workflow publishes only the prepared HTML and its assets; the previous Hugo source is retained in Git history and in the local backup.
 
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+## Presentation preferences
+
+Publication subject categories and topic filters are removed. The homepage uses compact 18px section headings, without the large decorative headings. The talks section is removed, and the contact label remains `05 / Contact`.
