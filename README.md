@@ -35,7 +35,7 @@ Then visit `http://localhost:8000`. Press Control-C in that terminal when finish
 - `assets/style.css`: shared design and responsive layouts. Colors and font choices are defined at the top.
 - `assets/site.js`: mobile menu and publication search behavior. All academic content remains readable when JavaScript is disabled.
 - `assets/portrait.jpg`: a web-optimized JPEG copy of the updated EFI portrait supplied by the user. Replace it with a square portrait to change the photograph.
-- `assets/cv-dhong-yeon-cheong.pdf`: unchanged copy of `cv_cheong.pdf`. Replace this file with a newer CV using the same filename to preserve existing links.
+- `assets/cv-dhong-yeon-cheong.pdf`: unchanged copy of the latest supplied `CV-2.pdf`. Replace this file with a newer CV using the same filename to preserve existing links.
 - `assets/favicon.svg`: small browser-tab icon.
 - `.nojekyll`: tells GitHub Pages to serve the files directly.
 
@@ -52,7 +52,7 @@ The source is the user-supplied `main-2.tex` and matching five-page `CV-2.pdf`, 
 - The homepage includes the updated KICP seminar organizer role (October 2026–June 2027), the corrected Thunch/Funch term (October 2025–June 2026), and the three referee journals. No referee start date is inferred because the updated CV does not give one.
 - Talks and presentations are omitted from the webpage at the user's request; the downloadable CV retains the full record.
 - The portrait is the updated EFI photograph supplied by the user on October 25, 2026, converted from Display P3 to standard sRGB JPEG and resized for the web, with the photo content unchanged. The homepage image URL includes a version query so browsers refresh the previous photograph.
-- No GitHub username, custom domain, ORCID, Google Scholar profile, or analytics service has been guessed or configured.
+- No custom domain, ORCID, Google Scholar profile, or analytics service has been guessed or configured.
 
 The configured production address is https://dhongyeon.github.io/. This repository uses `.github/workflows/publish.yaml` to deploy the static site on pushes to `main`. The workflow publishes only the prepared HTML and its assets; the previous Hugo source is retained in Git history and in the local backup.
 
